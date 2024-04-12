@@ -60,19 +60,19 @@ export default async function DashboardPage() {
     <div className="grid items-start gap-y-8">
       <div className="flex items-center justify-between px-2">
         <div className="grid gap-1">
-          <h1 className="text-3xl md:text-4xl">Your Notes</h1>
+          <h1 className="text-3xl md:text-4xl">Your Personal Journal</h1>
           <p className="text-lg text-muted-foreground">
-            Here you can see and create new notes
+            Here you can see and create a new entry in your journal
           </p>
         </div>
 
         {data?.Subscription?.status === "active" ? (
           <Button asChild>
-            <Link href="/dashboard/new">Create a new Note</Link>
+            <Link href="/dashboard/new">Create a new Entry</Link>
           </Button>
         ) : (
           <Button asChild>
-            <Link href="/dashboard/billing">Create a new Note</Link>
+            <Link href="/dashboard/billing">Create a new Entry</Link>
           </Button>
         )}
       </div>
@@ -84,20 +84,20 @@ export default async function DashboardPage() {
           </div>
 
           <h2 className="mt-6 text-xl font-semibold">
-            You dont have any notes created
+            You dont have any entry yet
           </h2>
           <p className="mb-8 mt-2 text-center text-sm leading-6 text-muted-foreground max-w-sm mx-auto">
-            You currently dont have any notes. please create some so that you
-            can see them right here.
+          start writing! ✍️ 
+          
           </p>
 
           {data?.Subscription?.status === "active" ? (
             <Button asChild>
-              <Link href="/dashboard/new">Create a new Note</Link>
+              <Link href="/dashboard/new">Create a new Entry</Link>
             </Button>
           ) : (
             <Button asChild>
-              <Link href="/dashboard/billing">Create a new Note</Link>
+              <Link href="/dashboard/billing">Create a new Entry</Link>
             </Button>
           )}
         </div>

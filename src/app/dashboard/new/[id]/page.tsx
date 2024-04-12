@@ -72,7 +72,7 @@ export default async function DynamicRoute({
         <CardHeader>
           <CardTitle>Edit Note</CardTitle>
           <CardDescription>
-            Right here you can now edit your notes
+            Save your deepest thoughts and secrets, this is your private and personal journal
           </CardDescription>
         </CardHeader>
         <CardContent className="flex flex-col gap-y-5">
