@@ -17,12 +17,12 @@ export default async function Home() {
           <Image src="/home1.jpg" width={440} height={330} alt="home" className="mx-auto" />
           <span className="w-auto px-6 py-3 rounded-full bg-secondary">
             <span className="text-sm font-medium text-primary">
-              安らぎ (yasuragi)
+            安らぎ, やすらぎ, yasuragi
             </span>
           </span>
 
           <h1 className="text-3xl font-extrabold lg:text-6xl text-primary mt-8">
-            Means peace and tranquility.
+            a japanese word meaning peace and tranquility.
           </h1>
 
           <p className="max-w-xl mx-auto mt-8 text-base lg:text-xl text-secondary-foreground">
